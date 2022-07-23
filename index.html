@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viaje</title>
+    <script src="travel.js"></script>
+</head>
+
+<body>
+    <form onsubmit="submitForm(event)">
+        
+        <h3>Travel Reservation Form</h3>
+        <h4>* Denotes mandatory</h4>
+        <ul>
+
+            <li>
+                <label for="name">Full Name* </label>
+                <input type="text" id="name" name="user_name" placeholder="Full Name" />
+            </li>
+            <li>
+                <label for="email">Email Address*</label>
+                <input type="text" id="email" name="user_email" placeholder="example@example.com" />
+            </li>
+            <li>
+                <label for="select_package">Select Tour Package*</label>
+                <select id="identifier-for-select_package" 
+                    <option value="" disabled selected hidden>Select Package</option>
+                    <option value="option_1">Blue</option>
+                    <option value="option_2">Gold</option>
+                    <option value="option_3">Platinum</option>
+                    <option value="option_4">Black Platinum</option>
+                </select>
+            </li>
+            <li>
+                <label for="date">Arrival date*</label>
+                <input type="text" id="date" name="user_date" placeholder="dd/mm/yyyy" />
+            </li>
+            <li>
+                <!-- Changing this option to a drop dowm menu to traveling usuals restriction. -->
+                <label for="persons">Number of persons*</label>
+                <select id="identifier-for- persons">
+                    <option value="" disabled selected hidden>Select number of people</option>
+                    <option value="option_1">1 person</option>
+                    <option value="option_2">2 persons</option>
+                    <option value="option_3">3 persons</option>
+                    <option value="option_4">4 persons</option>
+                    <option value="option_5">5 persons</option>
+                    <option value="option_6">6 persons</option>
+                    <option value="option_7">7 persons</option>
+                    <option value="option_8">8 persons</option>
+                </select>
+            </li>
+             <li><label for="Discount">Discount Coupon Code</label>
+                <input type="text" id="Discount" name="user_discount" placeholder="Promo Code"/>
+                </li>
+    </ul>
+    <button type="submit">Complete Reservation</button>
+    
+
+    </form>
+</body>
+
+</html>
