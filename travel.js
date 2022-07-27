@@ -21,7 +21,7 @@ const submitForm = (event) => {
   const travelInfo = {
     user_name: name,
     user_email: email,
-    user_selected_package: selectpackage,
+    user_selected_package: selectpackage.value,
     user_date: date,
     user_persons: persons,
     user_discount: discount,
